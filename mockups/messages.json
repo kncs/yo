@@ -1,0 +1,20 @@
+[
+    {
+        "from": "John",
+        "to": "Jane",
+        "at": "2017-12-08 19:05:32",
+        "text": "Hey, what's up ?"
+    }, 
+    {
+        "from": "kncs",
+        "to": "Awesome Slack #channel",
+        "at": "2017-12-08 20:52:26",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }, 
+    {
+        "from": "kncs",
+        "to": "Awesome Slack #channel",
+        "at": "2017-12-08 21:04:45",
+        "text": "hum ... anybody is here ?"
+    }
+]
