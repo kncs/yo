@@ -1,22 +1,24 @@
 <template>
   <div class="overview">
     <h1>{{ msg }}</h1>
-    <message></message>
+    <channel v-for='(channel, index) in channels' :key='index' :channel='channel'></channel>
   </div>
 </template>
 
 <script>
-import message from '@/components/message'
+import mockChannels from '../../mockups/channels.json'
+import channel from '@/components/channel'
 
 export default {
   name: 'overview',
   data () {
     return {
-      msg: 'A simple first Vue component'
+      msg: 'A simple first Vue component',
+      channels: mockChannels
     }
   },
   components: {
-    'message': message
+    'channel': channel
   }
 }
 </script>
