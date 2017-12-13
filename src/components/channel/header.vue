@@ -1,10 +1,10 @@
 <template>
   <div class="header">
       <div class="header-block-left">
-      <i class="fa fa-comment" aria-hidden="true"></i>
+        <i class="fa fa-comment" aria-hidden="true"></i>
       </div>
       <div class="header-block-middle">
-      <div>{{ title }}</div>
+        <div>{{ title }}</div>
       </div>
       <div class="header-block-right">
           <i class="fa fa-link" aria-hidden="true"></i>
