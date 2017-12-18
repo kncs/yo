@@ -1,10 +1,11 @@
 <template>
   <div class="body">
-    <message  v-for='(message, index) in messages' :key='index' :message='message'></message>
+    <message  v-for='(message, index) in messagesOrdered' :key='index' :message='message'></message>
   </div>
 </template>
 
 <script>
+import moment from 'moment'
 import message from './message'
 
 export default {
@@ -12,6 +13,13 @@ export default {
   props: ['messages'],
   components: {
     message
+  },
+  computed: {
+    messagesOrdered: function() {
+      return this.messages.sort((a, b) => {
+        return moment(a.at).diff(moment(b.at))
+      });
+    }
   }
 }
 </script>
