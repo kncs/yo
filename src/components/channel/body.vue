@@ -15,10 +15,10 @@ export default {
     message
   },
   computed: {
-    messagesOrdered: function() {
+    messagesOrdered: function () {
       return this.messages.sort((a, b) => {
         return moment(a.at).diff(moment(b.at))
-      });
+      })
     }
   }
 }
