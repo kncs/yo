@@ -5,16 +5,10 @@
     </div>
     <div class="message-details">
         <div class="message-details-header">
-        <span class="message-details-header-name">
-            {{message.from}}
-        </span>
-        <span class="message-details-header-timestamp">
-            {{message.at}}
-        </span>
+          <span class="message-details-header-name">{{message.from}}</span>
+          <span class="message-details-header-timestamp">{{message.at}}</span>
         </div>
-        <div class="message-details-body">
-            {{message.text}}
-        </div>
+        <div class="message-details-body">{{message.text}}</div>
     </div>
   </div>
 </template>
