@@ -5,14 +5,13 @@
 </template>
 
 <script>
-import mockChannels from '../../mockups/channels.json'
 import channel from '@/components/channel'
 
 export default {
   name: 'overview',
   data () {
     return {
-      channels: mockChannels
+      channels: this.$store.state.channels
     }
   },
   components: {
